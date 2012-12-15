@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<!-- saved from url=(0013)about:internet -->
+<head>
+<meta charset="utf-8"/>
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name = "viewport" content = "initial-scale = 1.0, user-scalable = no">
+<link rel="apple-touch-icon-precomposed" href="assets/icon57.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/icon72.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/icon114.png" />
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+<title>Crazy Copter</title>
+<script>
+window.onload=function(){
+document.body.ontouchmove=function(event){ event.preventDefault(); }
+document.getElementById('wrapper').ontouchmove=function(event){ event.preventDefault(); }
+document.getElementById('canvas').ontouchmove=function(event){ event.preventDefault(); }
+}
+</script>
+</head>
+<body>
+<div id="wrapper">
+<canvas id="canvas"></canvas>
+<div id="playnow"></div>
+</div>
+<script src="js/gamescript.js"></script>
+</body>
+</html>
